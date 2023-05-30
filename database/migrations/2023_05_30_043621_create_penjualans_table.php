@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('penjualans', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('marketing_id');
+            $table->string('transaction_number');
+            $table->date('date');
+            $table->integer('cargo_fee');
+            $table->integer('total_balance');
+            $table->integer('grand_total');
             $table->timestamps();
         });
     }
