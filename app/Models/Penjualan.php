@@ -20,4 +20,9 @@ class Penjualan extends Model
     {
         return $this->belongsTo(Marketing::class, 'marketing_id', 'id');
     }
+
+    public function pembayarans()
+    {
+        return $this->hasMany(Pembayaran::class, 'penjualan_id', 'id');
+    }
 }

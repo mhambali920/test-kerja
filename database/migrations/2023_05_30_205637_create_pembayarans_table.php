@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('pembayarans', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('penjualan_id')->constrained()->cascadeOnDelete();
+            $table->dateTime('tanggal');
+            $table->decimal('jumlah', 16, 2);
             $table->timestamps();
         });
     }
