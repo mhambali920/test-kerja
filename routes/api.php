@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/komisi', [PenjualanController::class, 'index']);
+Route::get('/penjualan', [PenjualanController::class, 'index']);
+Route::get('/commission', [PenjualanController::class, 'commission']);

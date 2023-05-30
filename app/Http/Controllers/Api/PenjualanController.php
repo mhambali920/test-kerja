@@ -14,7 +14,6 @@ class PenjualanController extends Controller
     protected function hitungkomisi($omset)
     {
         $komisi = 0;
-
         if ($omset >= 500000000) {
             $komisi = 0.1;
         } elseif ($omset >= 200000000) {
@@ -27,14 +26,23 @@ class PenjualanController extends Controller
 
     public function index()
     {
+        try {
+            $penjualan = Penjualan::paginate(10);
+            return ResponseFormatter::success(data: $penjualan, message: "data berhasil di ambil");
+        } catch (Exception $e) {
+            return ResponseFormatter::error(message: $e->getMessage(), code: $e->getCode());
+        }
+    }
 
+    public function commission()
+    {
         try {
             $penjualan = Penjualan::with('marketing')
                 ->selectRaw('marketing_id, MONTH(date) as month, SUM(total_balance) as total')
                 ->groupBy('marketing_id', 'month')
-                ->get();
+                ->paginate(5);
 
-            $result = $penjualan->map(function ($item) {
+            $result = $penjualan->getCollection()->map(function ($item) {
                 $omzet = $item->total;
                 $komisi = $this->hitungKomisi($omzet);
                 $komisiNominal = $omzet * $komisi;
@@ -48,7 +56,9 @@ class PenjualanController extends Controller
                 ];
             });
 
-            return ResponseFormatter::success(data: $result, message: 'success');
+            $penjualan->setCollection($result);
+
+            return ResponseFormatter::success(data: $penjualan, message: 'success');
         } catch (Exception $e) {
             return ResponseFormatter::error(message: $e->getMessage(), code: 500);
         }
