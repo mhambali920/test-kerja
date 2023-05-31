@@ -14,8 +14,6 @@ Then run local development server
 php artisan serve
 ```
 
----
-
 used the included postman collection to test this rest api
 
 ## License
