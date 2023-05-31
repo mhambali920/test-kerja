@@ -1,6 +1,6 @@
 ## Installation
 
-> This package requires PHP 8+
+> This package uses laravel 10 and requires PHP 8+
 
 Download or clone this repository
 
