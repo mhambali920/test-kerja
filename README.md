@@ -1,14 +1,14 @@
 ## Installation
 
-> This package requires PHP 8
+> This package requires PHP 8+
 
 Download or clone this repository
 
 ```
-git@github.com:mhambali920/test-kerja.git
+git clone git@github.com:mhambali920/test-kerja.git
 ```
 
-Then run local server
+Then run local development server
 
 ```
 php artisan serve
