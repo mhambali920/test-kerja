@@ -8,6 +8,15 @@ Download or clone this repository
 git clone git@github.com:mhambali920/test-kerja.git
 ```
 
+open your terminal in root directory project
+then run
+
+```
+composer install
+php artisan migrate
+php artisan db:seed DatabaseSeeder
+```
+
 Then run local development server
 
 ```
