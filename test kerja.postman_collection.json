@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "cc087ee6-679a-4e6f-8ecc-ab581d2604b2",
+		"_postman_id": "1db22e70-d829-423c-b905-5b2330db1b83",
 		"name": "test kerja",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "16538511",
-		"_collection_link": "https://web.postman.co/workspace/Workspace-BWA~dbef79f1-95d8-482f-810a-391a7d312f3c/collection/16538511-cc087ee6-679a-4e6f-8ecc-ab581d2604b2?source=collection_link"
+		"_collection_link": "https://www.postman.com/universal-spaceship-63213/workspace/test-kerja/collection/16538511-1db22e70-d829-423c-b905-5b2330db1b83?source=collection_link"
 	},
 	"item": [
 		{
@@ -75,11 +75,11 @@
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 31 May 2023 01:38:52 GMT"
+									"value": "Wed, 31 May 2023 02:12:36 GMT"
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 31 May 2023 01:38:52 GMT"
+									"value": "Wed, 31 May 2023 02:12:36 GMT"
 								},
 								{
 									"key": "Connection",
@@ -103,7 +103,7 @@
 								},
 								{
 									"key": "X-RateLimit-Remaining",
-									"value": "57"
+									"value": "59"
 								},
 								{
 									"key": "Access-Control-Allow-Origin",
@@ -111,7 +111,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"success\"\n    },\n    \"result\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"Marketing\": \"Alfandy\",\n                \"Bulan\": \"Mei\",\n                \"Omzet\": \"138000000\",\n                \"Komisi %\": \"2.5%\",\n                \"Komisi Nominal\": 3450000\n            },\n            {\n                \"Marketing\": \"Danang\",\n                \"Bulan\": \"Mei\",\n                \"Omzet\": \"44320000\",\n                \"Komisi %\": \"0%\",\n                \"Komisi Nominal\": 0\n            },\n            {\n                \"Marketing\": \"Mery\",\n                \"Bulan\": \"Mei\",\n                \"Omzet\": \"80000000\",\n                \"Komisi %\": \"0%\",\n                \"Komisi Nominal\": 0\n            },\n            {\n                \"Marketing\": \"Alfandy\",\n                \"Bulan\": \"Juli\",\n                \"Omzet\": \"75000000\",\n                \"Komisi %\": \"0%\",\n                \"Komisi Nominal\": 0\n            },\n            {\n                \"Marketing\": \"Mery\",\n                \"Bulan\": \"Juli\",\n                \"Omzet\": \"1010020000\",\n                \"Komisi %\": \"10%\",\n                \"Komisi Nominal\": 101002000\n            }\n        ],\n        \"first_page_url\": \"http://localhost:8000/api/commission?page=1\",\n        \"from\": 1,\n        \"last_page\": 2,\n        \"last_page_url\": \"http://localhost:8000/api/commission?page=2\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"pagination.previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/commission?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://localhost:8000/api/commission?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/commission?page=2\",\n                \"label\": \"pagination.next\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": \"http://localhost:8000/api/commission?page=2\",\n        \"path\": \"http://localhost:8000/api/commission\",\n        \"per_page\": 5,\n        \"prev_page_url\": null,\n        \"to\": 5,\n        \"total\": 6\n    }\n}"
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"data komisi berhasil di ambil\"\n    },\n    \"result\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"Marketing\": \"Alfandy\",\n                \"Bulan\": \"Mei\",\n                \"Omzet\": \"138000000\",\n                \"Komisi %\": \"2.5%\",\n                \"Komisi Nominal\": 3450000\n            },\n            {\n                \"Marketing\": \"Danang\",\n                \"Bulan\": \"Mei\",\n                \"Omzet\": \"44320000\",\n                \"Komisi %\": \"0%\",\n                \"Komisi Nominal\": 0\n            },\n            {\n                \"Marketing\": \"Mery\",\n                \"Bulan\": \"Mei\",\n                \"Omzet\": \"80000000\",\n                \"Komisi %\": \"0%\",\n                \"Komisi Nominal\": 0\n            },\n            {\n                \"Marketing\": \"Alfandy\",\n                \"Bulan\": \"Juli\",\n                \"Omzet\": \"75000000\",\n                \"Komisi %\": \"0%\",\n                \"Komisi Nominal\": 0\n            },\n            {\n                \"Marketing\": \"Mery\",\n                \"Bulan\": \"Juli\",\n                \"Omzet\": \"1010020000\",\n                \"Komisi %\": \"10%\",\n                \"Komisi Nominal\": 101002000\n            },\n            {\n                \"Marketing\": \"Danang\",\n                \"Bulan\": \"Juli\",\n                \"Omzet\": \"205000000\",\n                \"Komisi %\": \"5%\",\n                \"Komisi Nominal\": 10250000\n            }\n        ],\n        \"first_page_url\": \"http://localhost:8000/api/commission?page=1\",\n        \"from\": 1,\n        \"last_page\": 1,\n        \"last_page_url\": \"http://localhost:8000/api/commission?page=1\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"pagination.previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/commission?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"pagination.next\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": null,\n        \"path\": \"http://localhost:8000/api/commission\",\n        \"per_page\": 15,\n        \"prev_page_url\": null,\n        \"to\": 6,\n        \"total\": 6\n    }\n}"
 						}
 					]
 				},

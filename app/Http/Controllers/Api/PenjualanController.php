@@ -40,7 +40,7 @@ class PenjualanController extends Controller
             $penjualan = Penjualan::with('marketing')
                 ->selectRaw('marketing_id, MONTH(date) as month, SUM(total_balance) as total')
                 ->groupBy('marketing_id', 'month')
-                ->paginate(5);
+                ->paginate();
 
             $result = $penjualan->getCollection()->map(function ($item) {
                 $omzet = $item->total;
@@ -58,7 +58,7 @@ class PenjualanController extends Controller
 
             $penjualan->setCollection($result);
 
-            return ResponseFormatter::success(data: $penjualan, message: 'success');
+            return ResponseFormatter::success(data: $penjualan, message: 'data komisi berhasil di ambil');
         } catch (Exception $e) {
             return ResponseFormatter::error(message: $e->getMessage(), code: 500);
         }
