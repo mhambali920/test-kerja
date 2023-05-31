@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "cc087ee6-679a-4e6f-8ecc-ab581d2604b2",
+		"name": "test kerja",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16538511",
+		"_collection_link": "https://web.postman.co/workspace/Workspace-BWA~dbef79f1-95d8-482f-810a-391a7d312f3c/collection/16538511-cc087ee6-679a-4e6f-8ecc-ab581d2604b2?source=collection_link"
+	},
+	"item": [
+		{
+			"name": "penjualan",
+			"item": [
+				{
+					"name": "get commission",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"strictSSL": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/commission",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"commission"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get commission success example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/api/commission",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"commission"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 May 2023 01:38:52 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 May 2023 01:38:52 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"success\"\n    },\n    \"result\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"Marketing\": \"Alfandy\",\n                \"Bulan\": \"Mei\",\n                \"Omzet\": \"138000000\",\n                \"Komisi %\": \"2.5%\",\n                \"Komisi Nominal\": 3450000\n            },\n            {\n                \"Marketing\": \"Danang\",\n                \"Bulan\": \"Mei\",\n                \"Omzet\": \"44320000\",\n                \"Komisi %\": \"0%\",\n                \"Komisi Nominal\": 0\n            },\n            {\n                \"Marketing\": \"Mery\",\n                \"Bulan\": \"Mei\",\n                \"Omzet\": \"80000000\",\n                \"Komisi %\": \"0%\",\n                \"Komisi Nominal\": 0\n            },\n            {\n                \"Marketing\": \"Alfandy\",\n                \"Bulan\": \"Juli\",\n                \"Omzet\": \"75000000\",\n                \"Komisi %\": \"0%\",\n                \"Komisi Nominal\": 0\n            },\n            {\n                \"Marketing\": \"Mery\",\n                \"Bulan\": \"Juli\",\n                \"Omzet\": \"1010020000\",\n                \"Komisi %\": \"10%\",\n                \"Komisi Nominal\": 101002000\n            }\n        ],\n        \"first_page_url\": \"http://localhost:8000/api/commission?page=1\",\n        \"from\": 1,\n        \"last_page\": 2,\n        \"last_page_url\": \"http://localhost:8000/api/commission?page=2\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"pagination.previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/commission?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://localhost:8000/api/commission?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/commission?page=2\",\n                \"label\": \"pagination.next\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": \"http://localhost:8000/api/commission?page=2\",\n        \"path\": \"http://localhost:8000/api/commission\",\n        \"per_page\": 5,\n        \"prev_page_url\": null,\n        \"to\": 5,\n        \"total\": 6\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get penjualan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/penjualan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"penjualan"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get penjualan success example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/penjualan",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"penjualan"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 May 2023 01:57:16 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 May 2023 01:57:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"data berhasil di ambil\"\n    },\n    \"result\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"marketing_id\": 1,\n                \"transaction_number\": \"TRX001\",\n                \"date\": \"2023-05-22\",\n                \"cargo_fee\": 25000,\n                \"total_balance\": 3000000,\n                \"grand_total\": 3025000,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 2,\n                \"marketing_id\": 3,\n                \"transaction_number\": \"TRX002\",\n                \"date\": \"2023-05-22\",\n                \"cargo_fee\": 25000,\n                \"total_balance\": 320000,\n                \"grand_total\": 345000,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 3,\n                \"marketing_id\": 1,\n                \"transaction_number\": \"TRX003\",\n                \"date\": \"2023-05-22\",\n                \"cargo_fee\": 0,\n                \"total_balance\": 65000000,\n                \"grand_total\": 65000000,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 4,\n                \"marketing_id\": 1,\n                \"transaction_number\": \"TRX004\",\n                \"date\": \"2023-05-23\",\n                \"cargo_fee\": 10000,\n                \"total_balance\": 70000000,\n                \"grand_total\": 70010000,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 5,\n                \"marketing_id\": 2,\n                \"transaction_number\": \"TRX005\",\n                \"date\": \"2023-05-23\",\n                \"cargo_fee\": 10000,\n                \"total_balance\": 80000000,\n                \"grand_total\": 80010000,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 6,\n                \"marketing_id\": 3,\n                \"transaction_number\": \"TRX006\",\n                \"date\": \"2023-05-23\",\n                \"cargo_fee\": 12000,\n                \"total_balance\": 44000000,\n                \"grand_total\": 44012000,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 7,\n                \"marketing_id\": 1,\n                \"transaction_number\": \"TRX007\",\n                \"date\": \"2023-06-01\",\n                \"cargo_fee\": 0,\n                \"total_balance\": 75000000,\n                \"grand_total\": 75000000,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 8,\n                \"marketing_id\": 2,\n                \"transaction_number\": \"TRX008\",\n                \"date\": \"2023-06-02\",\n                \"cargo_fee\": 0,\n                \"total_balance\": 85000000,\n                \"grand_total\": 85000000,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 9,\n                \"marketing_id\": 2,\n                \"transaction_number\": \"TRX009\",\n                \"date\": \"2023-06-01\",\n                \"cargo_fee\": 0,\n                \"total_balance\": 175000000,\n                \"grand_total\": 175000000,\n                \"created_at\": null,\n                \"updated_at\": null\n            },\n            {\n                \"id\": 10,\n                \"marketing_id\": 3,\n                \"transaction_number\": \"TRX010\",\n                \"date\": \"2023-06-01\",\n                \"cargo_fee\": 0,\n                \"total_balance\": 75000000,\n                \"grand_total\": 75000000,\n                \"created_at\": null,\n                \"updated_at\": null\n            }\n        ],\n        \"first_page_url\": \"http://localhost:8000/api/penjualan?page=1\",\n        \"from\": 1,\n        \"last_page\": 2,\n        \"last_page_url\": \"http://localhost:8000/api/penjualan?page=2\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"pagination.previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/penjualan?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://localhost:8000/api/penjualan?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/penjualan?page=2\",\n                \"label\": \"pagination.next\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": \"http://localhost:8000/api/penjualan?page=2\",\n        \"path\": \"http://localhost:8000/api/penjualan\",\n        \"per_page\": 10,\n        \"prev_page_url\": null,\n        \"to\": 10,\n        \"total\": 12\n    }\n}"
+						}
+					]
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "pembayaran",
+			"item": [
+				{
+					"name": "get all pembayaran",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/pembayaran",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pembayaran"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get pembayaran by penjualan_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/pembayaran?penjualan_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pembayaran"
+							],
+							"query": [
+								{
+									"key": "penjualan_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create pembayaran",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "penjualan_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "tanggal",
+									"value": "2023-05-31",
+									"type": "text"
+								},
+								{
+									"key": "jumlah",
+									"value": "20000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/pembayaran",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"pembayaran"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create pembayaran success example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "penjualan_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "tanggal",
+											"value": "2023-05-31",
+											"type": "text"
+										},
+										{
+											"key": "jumlah",
+											"value": "20000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/pembayaran",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"pembayaran"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 May 2023 01:30:36 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 31 May 2023 01:30:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "60"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"code\": 200,\n        \"status\": \"success\",\n        \"message\": \"Pembayaran berhasil disimpan.\"\n    },\n    \"result\": {\n        \"penjualan_id\": \"1\",\n        \"tanggal\": \"2023-05-31\",\n        \"jumlah\": \"20000\",\n        \"updated_at\": \"2023-05-31T01:30:35.000000Z\",\n        \"created_at\": \"2023-05-31T01:30:35.000000Z\",\n        \"id\": 5\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
